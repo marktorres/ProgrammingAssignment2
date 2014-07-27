@@ -60,6 +60,6 @@ cacheSolve <- function(max, ...) {
      message("calculating inverse matrix")
      invmax <- solve (max, ...)
      max$setinvmax(invmax)
-
+     max$setmax(max)
      invmax
 }
